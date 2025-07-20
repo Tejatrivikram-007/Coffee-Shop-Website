@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brew Haven | Artisanal Coffee & Pastries</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./test.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="loader">
+        <div class="coffee-cup">
+            <div class="cup"></div>
+            <div class="handle"></div>
+            <div class="steam">
+                <div class="steam-1"></div>
+                <div class="steam-2"></div>
+                <div class="steam-3"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <span class="logo-icon">BH</span>
+                <h1>Brew Haven</h1>
+            </div>
+            
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-actions">
+                <!-- <a href="order.html" class="order-btn">Order Online</a> -->
+                <div class="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h2 class="hreo_h2">Artisanal Coffee & Handcrafted Pastries</h2>
+                <p>Where every cup is brewed with passion and every bite tells a story</p>
+                <div class="hero-btns">
+                    <a href="#menu" class="btn primary">Explore Menu</a>
+                    <!-- <a href="order.html" class="btn secondary">Order Now</a> -->
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-down">
+            <span>Scroll Down</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section-padding" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Story</h2>
+                <div class="divider"></div>
+                <p>Discover the passion behind Brew Haven</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>From Bean to Cup</h3>
+                    <p>Founded in 2018, Brew Haven began as a small passion project between two coffee enthusiasts. Today, we've grown into a beloved community hub where people gather to enjoy ethically sourced coffee and house-made pastries.</p>
+                    <p>We roast our beans in small batches to ensure peak freshness and flavor. Our pastry chefs craft everything from scratch using local, seasonal ingredients.</p>
+                    <a href="#menu" class="btn primary">View Our Menu</a>
+                </div>
+                <div class="about-image">
+                    <img src="https://i.pinimg.com/1200x/eb/d1/6e/ebd16e352b001324af0af70ff2c395a2.jpg" alt="Coffee preparation" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Menu Section -->
+<section class="menu section-padding" id="menu">
+    <div class="container">
+        <div class="section-header">
+            <h2>Our Menu</h2>
+            <div class="divider"></div>
+            <p>Seasonal selections crafted with care</p>
+        </div>
+        
+        <div class="menu-tabs">
+            <button class="tab-btn active" data-tab="coffee">Coffee</button>
+            <button class="tab-btn" data-tab="tea">Tea</button>
+            <button class="tab-btn" data-tab="breakfast">Breakfast</button>
+            <button class="tab-btn" data-tab="pastries">Pastries</button>
+        </div>
+        
+        <div class="menu-items">
+            
+            <div class="menu-category coffee active">
+                <div class="menu-item">
+                    <div class="item-img">
+                        <img src="https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg" alt="Espresso coffee">
+                    </div>
+                    <div class="item-details">
+                        <h3>Classic Espresso</h3>
+                        <p>A concentrated coffee beverage with rich crema</p>
+                        <div class="item-price">₹80</div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-img">
+                        <img src="https://images.pexels.com/photos/2067405/pexels-photo-2067405.jpeg" alt="Cappuccino">
+                    </div>
+                    <div class="item-details">
+                        <h3>Cappuccino</h3>
+                        <p>Espresso with steamed milk and silky foam</p>
+                        <div class="item-price">₹120</div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-img">
+                        <img src="https://images.pexels.com/photos/14705282/pexels-photo-14705282.jpeg" alt="Latte art">
+                    </div>
+                    <div class="item-details">
+                        <h3>Vanilla Latte</h3>
+                        <p>Espresso with steamed milk and vanilla syrup</p>
+                        <div class="item-price">₹150</div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-img">
+                        <img src="https://images.pexels.com/photos/6347/coffee-cup-working-happy.jpg" alt="Americano coffee">
+                    </div>
+                    <div class="item-details">
+                        <h3>Americano</h3>
+                        <p>Espresso diluted with hot water for a smooth taste</p>
+                        <div class="item-price">₹100</div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-img">
+                        <img src="https://images.pexels.com/photos/13279376/pexels-photo-13279376.jpeg" alt="Mocha coffee">
+                    </div>
+                    <div class="item-details">
+                        <h3>Mocha</h3>
+                        <p>Espresso with chocolate and steamed milk</p>
+                        <div class="item-price">₹160</div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-img">
+                        <img src="https://images.pexels.com/photos/302896/pexels-photo-302896.jpeg" alt="Cold brew coffee">
+                    </div>
+                    <div class="item-details">
+                        <h3>Cold Brew</h3>
+                        <p>Smooth, cold-extracted coffee over ice</p>
+                        <div class="item-price">₹140</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Tea Items (6 items) -->
+            <div class="menu-category tea">
+                <div class="menu-item">
+                    <div class="item-img">
+                        <img src="https://images.pexels.com/photos/5946675/pexels-photo-5946675.jpeg" alt="Matcha latte">
+                    </div>
+                    <div class="item-details">
+                        <h3>Matcha Latte</h3>
+                        <p>Japanese green tea powder with steamed milk</p>
+                        <div class="item-price">₹180</div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-img">
+                        <img src="https://images.pexels.com/photos/5946691/pexels-photo-5946691.jpeg" alt="Chai latte">
+                    </div>
+                    <div class="item-details">
+                        <h3>Masala Chai</h3>
+                        <p>Spiced tea with steamed milk and honey</p>
+                        <div class="item-price">₹60</div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-img">
+                        <img src="https://images.pexels.com/photos/691159/pexels-photo-691159.jpeg" alt="Earl Grey tea">
+                    </div>
+                    <div class="item-details">
+                        <h3>Earl Grey</h3>
+                        <p>Classic black tea with bergamot</p>
+                        <div class="item-price">₹80</div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-img">
+                        <img src="https://images.pexels.com/photos/691114/pexels-photo-691114.jpeg" alt="Jasmine tea">
+                    </div>
+                    <div class="item-details">
+                        <h3>Jasmine Green Tea</h3>
+                        <p>Fragrant green tea with jasmine blossoms</p>
+                        <div class="item-price">₹90</div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-img">
+                        <img src="https://images.pexels.com/photos/691115/pexels-photo-691115.jpeg" alt="Herbal tea">
+                    </div>
+                    <div class="item-details">
+                        <h3>Peppermint Tea</h3>
+                        <p>Refreshing herbal tea</p>
+                        <div class="item-price">₹70</div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-img">
+                        <img src="https://images.pexels.com/photos/691116/pexels-photo-691116.jpeg" alt="Iced tea">
+                    </div>
+                    <div class="item-details">
+                        <h3>Iced Hibiscus Tea</h3>
+                        <p>Refreshing floral iced tea</p>
+                        <div class="item-price">₹110</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Breakfast Items (6 items) -->
+            <div class="menu-category breakfast">
+                <div class="menu-item">
+                    <div class="item-img">
+                        <img src="https://images.pexels.com/photos/1351238/pexels-photo-1351238.jpeg" alt="Avocado toast">
+                    </div>
+                    <div class="item-details">
+                        <h3>Avocado Toast</h3>
+                        <p>Sourdough with avocado, cherry tomatoes, and feta</p>
+                        <div class="item-price">₹220</div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-img">
+                        <img src="https://images.pexels.com/photos/1211887/pexels-photo-1211887.jpeg" alt="Acai bowl">
+                    </div>
+                    <div class="item-details">
+                        <h3>Acai Bowl</h3>
+                        <p>Acai blend with granola and fresh fruit</p>
+                        <div class="item-price">₹250</div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-img">
+                        <img src="https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg" alt="Pancakes">
+                    </div>
+                    <div class="item-details">
+                        <h3>Buttermilk Pancakes</h3>
+                        <p>Stack of pancakes with maple syrup</p>
+                        <div class="item-price">₹280</div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-img">
+                        <img src="https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg" alt="Breakfast burrito">
+                    </div>
+                    <div class="item-details">
+                        <h3>Breakfast Burrito</h3>
+                        <p>Eggs, cheese, and veggies in a tortilla</p>
+                        <div class="item-price">₹240</div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-img">
+                        <img src="https://images.pexels.com/photos/2122294/pexels-photo-2122294.jpeg" alt="Omelette">
+                    </div>
+                    <div class="item-details">
+                        <h3>Vegetable Omelette</h3>
+                        <p>Fluffy eggs with seasonal vegetables</p>
+                        <div class="item-price">₹260</div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-img">
+                        <img src="https://images.pexels.com/photos/396132/pexels-photo-396132.jpeg" alt="Yogurt parfait">
+                    </div>
+                    <div class="item-details">
+                        <h3>Greek Yogurt Parfait</h3>
+                        <p>Yogurt with honey, granola, and berries</p>
+                        <div class="item-price">₹200</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Pastries Items (6 items) -->
+            <div class="menu-category pastries">
+                <div class="menu-item">
+                    <div class="item-img">
+                        <img src="https://images.pexels.com/photos/1775285/pexels-photo-1775285.jpeg" alt="Croissant">
+                    </div>
+                    <div class="item-details">
+                        <h3>Butter Croissant</h3>
+                        <p>Flaky, buttery French pastry</p>
+                        <div class="item-price">₹120</div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-img">
+                        <img src="https://images.pexels.com/photos/4792391/pexels-photo-4792391.jpeg" alt="Blueberry muffin">
+                    </div>
+                    <div class="item-details">
+                        <h3>Blueberry Muffin</h3>
+                        <p>Fresh blueberries in a tender muffin</p>
+                        <div class="item-price">₹90</div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-img">
+                        <img src="https://images.pexels.com/photos/1998920/pexels-photo-1998920.jpeg" alt="Cinnamon roll">
+                    </div>
+                    <div class="item-details">
+                        <h3>Cinnamon Roll</h3>
+                        <p>Sweet dough with cinnamon sugar</p>
+                        <div class="item-price">₹110</div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-img">
+                        <img src="https://images.pexels.com/photos/4198029/pexels-photo-4198029.jpeg" alt="Almond scone">
+                    </div>
+                    <div class="item-details">
+                        <h3>Almond Scone</h3>
+                        <p>Crumbly scone with almond flakes</p>
+                        <div class="item-price">₹100</div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-img">
+                        <img src="https://images.pexels.com/photos/4198028/pexels-photo-4198028.jpeg" alt="Cheese danish">
+                    </div>
+                    <div class="item-details">
+                        <h3>Cheese Danish</h3>
+                        <p>Flaky pastry with cream cheese filling</p>
+                        <div class="item-price">₹130</div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-img">
+                        <img src="https://images.pexels.com/photos/45202/brownie-dessert-cake-sweet-45202.jpeg" alt="Chocolate brownie">
+                    </div>
+                    <div class="item-details">
+                        <h3>Double Chocolate Brownie</h3>
+                        <p>Rich and fudgy chocolate treat</p>
+                        <div class="item-price">₹110</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Gallery Section -->
+<section class="gallery section-padding" id="gallery">
+    <div class="container">
+        <div class="section-header">
+            <h2>Our Café</h2>
+            <div class="divider"></div>
+            <p>Take a peek inside Brew Haven</p>
+        </div>
+        
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="https://images.pexels.com/photos/6267/menu-restaurant-vintage-table.jpg" alt="Coffee shop interior">
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.pexels.com/photos/2062426/pexels-photo-2062426.jpeg" alt="Barista making coffee">
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.pexels.com/photos/2696064/pexels-photo-2696064.jpeg" alt="Coffee shop exterior">
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.pexels.com/photos/3020919/pexels-photo-3020919.jpeg" alt="Coffee brewing">
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.pexels.com/photos/3171837/pexels-photo-3171837.jpeg" alt="Outdoor seating area">
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.pexels.com/photos/585418/pexels-photo-585418.jpeg" alt="Coffee shop counter">
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.pexels.com/photos/374147/pexels-photo-374147.jpeg" alt="Cozy reading nook">
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.pexels.com/photos/239975/pexels-photo-239975.jpeg" alt="Warm cafe lighting">
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.pexels.com/photos/325044/pexels-photo-325044.jpeg" alt="Cafe with plants">
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.pexels.com/photos/1581384/pexels-photo-1581384.jpeg" alt="Wall art in cafe">
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.pexels.com/photos/585750/pexels-photo-585750.jpeg" alt="Coffee beans display">
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.pexels.com/photos/205961/pexels-photo-205961.jpeg" alt="Fresh pastries display">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="testimonials section-padding">
+    <div class="container">
+        <div class="section-header">
+            <h2>What Our Customers Say</h2>
+            <div class="divider"></div>
+        </div>
+        
+        <div class="testimonial-slider">
+            <div class="testimonial">
+                <div class="quote">"The best coffee in town! I come here every morning before work. The baristas know my order by heart."</div>
+                <div class="author">
+                    <div class="author-img">
+                        <img src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg" alt="Sarah J.">
+                    </div>
+                    <div class="author-info">
+                        <h4>Sarah J.</h4>
+                        <p>Regular Customer</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonial">
+                <div class="quote">"The atmosphere is so cozy and inviting. Perfect place to work or catch up with friends over amazing coffee."</div>
+                <div class="author">
+                    <div class="author-img">
+                        <img src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg" alt="Michael T.">
+                    </div>
+                    <div class="author-info">
+                        <h4>Michael T.</h4>
+                        <p>Freelance Designer</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonial">
+                <div class="quote">"Their pastries are to die for! The almond croissant is my absolute favorite. Always fresh and delicious."</div>
+                <div class="author">
+                    <div class="author-img">
+                        <img src="https://images.pexels.com/photos/712513/pexels-photo-712513.jpeg" alt="Emily R.">
+                    </div>
+                    <div class="author-info">
+                        <h4>Emily R.</h4>
+                        <p>Food Blogger</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonial">
+                <div class="quote">"As a coffee connoisseur, I can confidently say Brew Haven serves the best pour-over in the city. Perfect balance every time!"</div>
+                <div class="author">
+                    <div class="author-img">
+                        <img src="https://images.pexels.com/photos/927451/pexels-photo-927451.jpeg" alt="David K.">
+                    </div>
+                    <div class="author-info">
+                        <h4>David K.</h4>
+                        <p>Coffee Enthusiast</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonial">
+                <div class="quote">"I love bringing clients here for meetings. The ambiance is perfect and the coffee is consistently excellent."</div>
+                <div class="author">
+                    <div class="author-img">
+                        <img src="https://images.pexels.com/photos/1181519/pexels-photo-1181519.jpeg" alt="Jessica L.">
+                    </div>
+                    <div class="author-info">
+                        <h4>Jessica L.</h4>
+                        <p>Business Consultant</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonial">
+                <div class="quote">"The cold brew here got me through my finals week! Now I'm hooked and come every weekend with my study group."</div>
+                <div class="author">
+                    <div class="author-img">
+                        <img src="https://images.pexels.com/photos/3785077/pexels-photo-3785077.jpeg" alt="Alex M.">
+                    </div>
+                    <div class="author-info">
+                        <h4>Alex M.</h4>
+                        <p>College Student</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Contact Section -->
+    <section class="contact section-padding" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Visit Us</h2>
+                <div class="divider"></div>
+                <p>We'd love to see you at our café</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <address>
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Brew Street, Coffeetown</p>
+                        <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+                        <p><i class="fas fa-envelope"></i> hello@brewhaven.com</p>
+                    </address>
+                    
+                    <h3>Opening Hours</h3>
+                    <ul class="hours">
+                        <li>Monday - Friday: 7am - 7pm</li>
+                        <li>Saturday: 8am - 8pm</li>
+                        <li>Sunday: 8am - 6pm</li>
+                    </ul>
+                    
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>Send Us a Message</h3>
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <div class="logo">
+                        <span class="logo-icon">BH</span>
+                        <h3>Brew Haven</h3>
+                    </div>
+                    <p>Artisanal coffee and handcrafted pastries in the heart of the city.</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <address>
+                        <p>123 Brew Street</p>
+                        <p>Coffeetown, CT 12345</p>
+                        <p>hello@brewhaven.com</p>
+                        <p>(123) 456-7890</p>
+                    </address>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to our newsletter for updates and special offers.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your Email">
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Brew Haven. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./test.js"></script>
+</body>
+</html>
